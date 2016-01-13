@@ -18,7 +18,7 @@
 #bg{display:none;position:absolute;left:0;top:0;width:100%;height:500px;z-index:21;background:#000;}
 
 #html1{display:none;position:relative;width:480px; height:260px; margin:100px auto;}
-#html1 li{ position:absolute;left:0;top:0; opacity:0; display:none;width:100%; height:100%;
+#html1 li{ position:absolute;left:0;top:0; opacity:0; display:none;width:100%; height:100%;cursor:pointer;
 transform: perspective(800px) translateX(0)  rotateY(0deg) ;
 transition:1s all ease;
 }
@@ -33,11 +33,11 @@ transform: perspective(800px) translateX(200px)  rotateY(-45deg) ;z-index:2;}
 #html1 li.r2{ display:block;
 transform: perspective(800px) translateX(300px)  rotateY(-45deg) ;z-index:1;}
 #html1 li img{width:500px;height:250px;}
-#html1 input{position:absolute;left:50%;top:50%;width:120px;height:50px;z-index:5;margin-top:150px;margin-left:-180px;font:italic bold 22px "kaiti";outline:none;border:none;border-radius:10%;background:rgba(0,204,0,0.3);}
+#html1 input{position:absolute;left:50%;top:50%;width:120px;height:50px;z-index:5;margin-top:150px;margin-left:-180px;font:italic bold 22px "kaiti";outline:none;border:none;border-radius:10%;background:rgba(0,204,0,0.3);cursor:pointer;}
 #html1 .next{margin-left:70px;}
 
 #html2{display:none;position:absolute;left:50%;top:50%; margin-left:-66px; margin-top:-100px;width:133px; height:200px; transform:perspective(1200px) rotateX(-15deg) rotateY(0deg);transform-style:preserve-3d;}
-#html2 li{position:absolute;left:0;top:0;width:100%; height:100%;
+#html2 li{position:absolute;left:0;top:0;width:100%; height:100%;cursor:pointer;
 
  -transform:rotateY(0deg)  translateZ(0px);
  transition:1s all ease; 
