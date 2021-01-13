@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Allen_cc11</title>
+<link rel="shortcut icon" href="icon/title.jpg"/>
+<link type="text/css" rel="stylesheet" href="css/html.css">
+<style>
+*{ margin:0; padding:0; list-style:none;font-family: "微软雅黑","张海山锐线体简"}
+html{overflow:hidden;}
+body{background:#b2a095;}
+#header{position:fixed;left:0;bottom:0;width:100%;text-align:center;}
+#header img{width:64px;margin-left:10px;z-index:22;cursor:pointer;}
+
+#devise1{width:100%;height:450px;margin:0 auto;position:relative;overflow:hidden;z-index:1}
+#devise1 ul{position:absolute;left:0;top:135px;}
+#devise1 ul li{float:left;position:relative;width:260px;height:179px;cursor:pointer;}
+#devise1 ul li img{position:absolute;left:0;top:0;}
+#devise1 ul li span{font-size:30px;color:#000; background:#fff; position:absolute;left:48%;top:48%;}
+
+#devise2{display:none;position:absolute;top:200px;left:50%;margin-left:-300px;width:640px;height:100px;}
+#devise2 img{width:100px;height:100px;margin-left:20px;cursor:pointer;}
+
+#devise3 {display:none;width:1000px; height:320px;margin:50px auto; position:relative; overflow:hidden;}
+#devise3 div{width:100%;height:100%;position:absolute;left:0;top:0;background:#CCC;cursor:pointer;}
+#devise3 div span{width:20px; height:320px; display:block; position:absolute; left:0; top:0;}
+
+#devise4{display:none;position:relative;width:430px;height:360px;margin:20px auto;}
+#devise4 img{width:100px;height:100px;background:#ccc;float:left;margin:20px;cursor:pointer;}
+#devise4 input{position:absolute;bottom:-100px;left:160px;outline:none;border:none;width:100px;height:40px;background:rgba(10,94,16,0.6);font-size:18px;filter:alpha(opacity:60);cursor:pointer;}
+
+#devise5{display:none;width:840px; margin:200px auto;}
+#devise5 li{float:left; position:relative;width:120px; height:60px; background:#3c98a5; margin:10px;text-align:center; line-height:150px; overflow:hidden;border-radius:5%;font-size:20px; font-weight:bold; color:#fff;text-align:center;line-height:68px;cursor:pointer;}
+#devise5 li span{ position:absolute;left:-200px;top:0;width:120px; height:60px; background:#0e2a69;opacity:0.2;filter:alpha(opacity:20);cursor:pointer;}
+</style>
+</head>
+<body>
+<div id="header">
+	<img src="icon/1.png">
+	<img src="icon/2.png">
+	<img src="icon/3.png">
+	<img src="icon/4.png">
+	<img src="icon/5.png">
+</div>
+<div id="cuntent">
+	<div id="devise1">
+        <ul>
+            <li><img src="img1/1.jpg"></li>
+            <li><img src="img1/2.jpg"></li>
+            <li><img src="img1/3.jpg"></li>
+            <li><img src="img1/4.jpg"></li>
+            <li><img src="img1/5.jpg"></li>
+            <li><img src="img1/6.jpg"></li>
+        </ul>
+	</div>
+    <div id="devise2">
+        <img src="img2/1.png">
+        <img src="img2/2.png">
+        <img src="img2/3.png">
+        <img src="img2/4.png">
+        <img src="img2/5.png">
+	</div>
+	<div id="devise3">
+        <div><img src="img3/1.jpg" /><span style="background:#11423f;"></span></div>
+        <div><img src="img3/2.jpg" /><span style="background:#f2f2f2;"></span></div>
+        <div><img src="img3/3.jpg" /><span style="background:#eaddbd;"></span></div>
+        <div><img src="img3/4.jpg" /><span style="background:#b9b6bd;"></span></div>
+        <div><img src="img3/5.jpg" /><span style="background:#e8e8e8;"></span></div>
+        <div><img src="img3/6.jpg" /><span style="background:#630714;"></span></div>
+        <div><img src="img3/7.jpg" /><span style="background:#ffa800;"></span></div>
+	</div>
+    <div id="devise4">
+		<img src="img4/1.jpg"/>
+        <img/>
+        <img/>
+        <img/>
+        <img/>
+        <img/>
+        <img/>
+        <img/>
+        <img/>
+        <input type="button" value="换换手气" id="bt">
+	</div>
+    <div id="devise5">
+        <li>首&nbsp;&nbsp;&nbsp;页<span></span></li>
+        <li>企业文化<span></span></li>
+        <li>产品中心<span></span></li>
+        <li>在线订购<span></span></li>
+        <li>认证网点<span></span></li>
+        <li>联系我们<span></span></li>       
+	</div>
+</div>
+<div id="select">
+	<img class="menu" src="icon/1.png"/>
+    <img class="menu" src="icon/5.png"/>
+	<span class="user" id="user"><img src="icon/user.png" style="width:100px;height:100px;"/></span>
+	<p class="text">HTML展开</p>
+</div>
+<canvas id="cvs" width="600" height="300"></canvas>
+<div id="bg">
+<ul id="html1">
+	<li class="l2"><img src="img1/1.jpg" /></li>
+	<li class="l1"><img src="img1/2.jpg" /></li>
+	<li class="cur"><img src="img1/3.jpg" /></li>
+	<li class="r1"><img src="img1/4.jpg" /></li>
+	<li class="r2"><img src="img1/5.jpg" /></li>
+	<li><img src="img1/6.jpg" /></li>
+	<input class="prev" type="button" value="上一张" />
+	<input class="next" type="button" value="下一张" />
+</ul>
+<ul id="html2">
+	<li><img src="img4/1.jpg" /></li>
+	<li><img src="img4/2.jpg" /></li>
+	<li><img src="img4/3.jpg" /></li>
+	<li><img src="img4/4.jpg" /></li>
+	<li><img src="img4/5.jpg" /></li>
+	<li><img src="img4/6.jpg" /></li>
+	<li><img src="img4/7.jpg" /></li>
+	<li><img src="img4/8.jpg" /></li>
+	<li><img src="img4/9.jpg" /></li>
+	<li><img src="img4/10.jpg" /></li>
+	<li><img src="img4/11.jpg" /></li>
+    <li><img src="img4/12.jpg" /></li>
+</ul>
+</div>
+</body>
+<script src="js/all.min.js"></script>
+</html>
